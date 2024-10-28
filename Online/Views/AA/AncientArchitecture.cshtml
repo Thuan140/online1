@@ -1,0 +1,148 @@
+﻿@{   
+    ViewBag.Title = "AncientArchitecture";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Architecture</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e2d7aa;
+            color: #000000;
+            font-size: 16px;
+            width: 1180px;
+            margin: 0 auto;
+        }
+
+
+        img {
+            width: 1100px;
+            height: 450px;
+        }
+
+
+        .image-container {
+            width: 1600px;
+            height: 450px;
+            margin-top: 65px;
+        }
+
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            margin-top: 65px;
+            font-family: 'Indie Flower', cursive;
+        }
+
+
+        nav {
+            margin: 30px;
+        }
+
+            nav a {
+                font-size: 28px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+                nav a:hover {
+                    color: #0a2d4a;
+                    font-weight: bold;
+                }
+
+
+        article img {
+            width: 350px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+
+        article p:first-letter {
+            font-family: EucrosiaUPC, sans-serif;
+            font-size: 40px;
+        }
+
+
+        article span a {
+            background: url('images/bg2.jpg');
+            color: #ffffff;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+
+        footer {
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+
+        article p:last-of-type span:first-of-type a::before {
+            content: url('images/comment.png');
+            position: relative;
+            right: 5px;
+            top: 7px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="~/Content/Img/Pyramid.jpg" alt="Ancient Pyramid">
+    </div>
+
+    <h1>Ancient Architecture</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">History</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <article>
+        <section>
+            <h2>Ancient Roman architecture</h2>
+            <img src="~/Content/Img/Ancient Roman architecture.jpg" alt="Roman Architecture">
+            <p>Ancient Roman architecture adopted the external language of classical Greek architecture for the purposes of the ancient Romans, but grew so different from Greek buildings as to become a new architectural style.</p>
+            <p><span><a href="#">0 COMMENTS</a></span></p>
+        </section>
+
+        <section>
+            <h2>Ancient Greek architecture</h2>
+            <img src="~/Content/Img/Ancient Greek architecture.jpg" alt="Greek Architecture">
+            <p>The architecture of ancient Greece is the architecture produced by the Greek-speaking people. Hellenic peoples whose culture flourished on the Greek mainland, the Peloponnese, the Aegean Islands, and the coasts of Asia Minor.</p>
+            <p><span><a href="#">0 COMMENTS</a></span></p>
+        </section>
+
+        <section>
+            <h2>Ancient Indian Architecture</h2>
+            <img src="~/Content/Img/Ancient Greek architecture.jpg" alt="Indian Architecture">
+            <p>Indian architecture is as old as the history of civilization. The earliest remains of recognizable building activity in India dates back to the Indus Valley civilization.</p>
+            <p><span><a href="#">0 COMMENTS</a></span></p>
+        </section>
+    </article>
+
+    <footer>
+        &copy; Copyright 2017 - YourSite.com
+    </footer>
+</body>
+</html>
